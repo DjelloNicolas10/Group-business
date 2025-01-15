@@ -1,0 +1,72 @@
+
+header {
+    width: 100%;
+    padding: 28px 8%;
+}
+
+#nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#nav-logo {
+    font-size: 28px;
+    color: rgb(173, 171, 55);
+}
+
+#nav-list {
+    display: flex;
+    gap: 48px;
+    text-decoration: none;
+}
+
+.nav-item a {
+   color: rgb(20, 20, 20);
+   font-weight: 600;
+   text-decoration: none;
+}
+
+.nav-item a:hover {
+    color: rgb(206, 79, 146);
+    transition: 1s;   
+}
+
+#mobile-btn {
+    display: none;
+}
+
+#mobile-menu {
+    display: none;
+}
+
+@media screen and (max-width: 1170px) {
+
+    #nav-list,
+    #nav-bar .btn-default {
+        display: none;
+    }
+
+    #mobile-btn {
+        display: block;
+        border: none;
+        background-color: transparent;
+        font-size: 1.5rem;
+        cursor: pointer;
+    } 
+
+    #mobile-menu .active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #mobile_nav-list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin: 12px 0px;
+    }
+}
