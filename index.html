@@ -1,69 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="pt-br">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cookie's</title>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-     
-    <link rel="stylesheet" href="header.css">
+    <title>Landing Page</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="header.css ">
+
+    <script src="https://kit.fontawesome.com/1d0d8f42ce.js" crossorigin="anonymous"></script>
+    
 </head>
 
 <body>
 
     <header>
-        <nav id="nav-bar">
-            <ion-icon name="bag-check" id="nav-logo"> SHOPPING</ion-icon>
+         <nav id="navbar">
+            <i class="fa-solid fa-burger" id="nav_logo">FOOD</i>
 
-             <ul id="nav-list">
+            <ul id="nav_list">
                 <li class="nav-item">
-                    <a href="Home">INICIÓ</a>
+                    <a href="#home">Início</a>
                 </li>
+
                 <li class="nav-item">
-                    <a href="menu">TABLEAU DES PRIX</a>
+                    <a href="#menu">Cardápio</a>
                 </li>
+
                 <li class="nav-item">
-                    <a href="Evaluation">EVALUATION</a>
+                    <a href="#testimonials">Avaliações</a>
                 </li>
             </ul>
 
             <button class="btn-default">
-                Cliquer ici
+                Peça Aqui
             </button>
 
-            <button id="mobile-btn">
-                <ion-icon name="menu"></ion-icon>
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
             </button>
-        </nav>
+         </nav>
 
-<!-- Outro menu -->
-        <div id="mobile-menu">
 
-          <ul id="mobile_nav-list">  
-             <li class="nav-item">
-                <a href="Home">INICIÓ</a>
-             </li>
-             <li class="nav-item">
-                <a href="menu">TABLEAU DES PRIX</a>
-             </li>
-            <li class="nav-item">
-                <a href="Evaluation">EVALUATION</a>
-            </li>
-        </ul>
-          
+         <div id="mobile_menu">
+
+            
+          <!-- Botão para ser utilizado para fechamento da lista -->
+          <button id="closeButton" class="close">
+            <i class="fas fa-times"></i>
+        </button>
+            
+            <ul id="mobile_nav_list">
+                <li class="nav-item">
+                    <a href="#home">Início</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#menu">Cardápio</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#testimonials">Avaliações</a>
+                </li>
+            </ul>
+
             <button class="btn-default">
-                Cliquer ici
+                Peça Aqui
             </button>
-
-        </div>
+         </div>
 
     </header>
     
 
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
