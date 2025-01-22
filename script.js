@@ -1,11 +1,14 @@
+// Seleção dos elementos
+const mobileBtn = document.getElementById('mobile_btn');
+const closeButton = document.getElementById('closeButton');
+const mobileMenu = document.getElementById('mobile_menu');
 
-//Aqui adicionamos um evento de escutar o click do Mouse sobre o ícone de Hamburguer.
-mobile_btn.addEventListener("click", function() {
-   mobile_menu.classList.add("flex");
-   //Criamos uma função que a ouvir o click do Mouse, ele adicione uma Class, que está fazendo nossa caixa (Div) aparecer, ou seja, ficar visível.
+// Abrir o menu móvel
+mobileBtn.addEventListener('click', () => {
+    mobileMenu.classList.add('active');
 });
 
-//Criamos uma função que a ouvir o click do Mouse, ele REMOVA uma Class, que está fazendo nossa caixa (Div) desaparecer, ou seja, ficar invisível.
-closeButton.addEventListener("click", function() {
-   mobile_menu.classList.remove("flex");
+// Fechar o menu móvel
+closeButton.addEventListener('click', () => {
+    mobileMenu.classList.remove('active');
 });
